@@ -7,13 +7,12 @@
 [layopt layer="0" page="fore" visible="true"]
 
 
+; 前景レイヤー0を表示する
+[layopt layer=0 visible=true]
+
+; 前景レイヤー0にHTML（div要素など）を挿入する
 [iscript]
-
-;varHTML='<div id="rainbow-target" class="iscript-rainbow-box">0122345</div>'
-
-;$('.layer_fore.layer0').append(varHTML);
-
-$('.0_fore').append('<div class=".iscript-rainbow-box"><font color="#FFFFFF">演出用の要素</font></div>');
+$(".0_fore").html('<div id="rainbow-target" class="iscript-rainbow-box">ここにHTMLを書く</div>');
 [endscript]
 
 
@@ -39,6 +38,9 @@ window.myInterval = setInterval(function() {
     }
 }, 50);
 [endscript]
+
+aaaaa[p]
+bbbbbb[p]
 
 ; わずかに待機（色の変化速度の調整。数字を大きくすると遅くなります）
 [glink target="g2" text="gaming1" cm="false"]
