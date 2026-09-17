@@ -8,7 +8,8 @@
 
 
 ; 前景レイヤー0を表示する
-[layopt layer=0 visible=true]
+@freeimage layer=0
+@layopt layer=0 visible=true
 
 ; 前景レイヤー0にHTML（div要素など）を挿入する
 [iscript]
@@ -53,7 +54,8 @@ bbbbbb[p]
 
 *g3
 [eval exp="clearInterval(window.myInterval);"]
-
+@freeimage layer=0
+@layopt layer=0 visible=false
 [s]
 
 ; for subroutine
