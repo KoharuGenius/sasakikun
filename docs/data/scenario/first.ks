@@ -1,6 +1,6 @@
 ;一番最初に呼び出されるファイル
 
-[title name="ゲームタイトル"]
+[title name="さっさと帰って！佐々木くん"]
 [stop_keyconfig]
 
 
@@ -30,7 +30,7 @@
 ;---
 
 ;メッセージウィンドウの表示
-@layopt layer=message0 visible=true
+@layopt layer=message0 visible=false
 
 ;***********************************
 ;MacroDefine
@@ -39,16 +39,25 @@
 [endmacro]
 
 [macro name="choice"]
-    [glink color="" size="24" target=%target text=%text]
+    [glink color="btn_02_red" size="24" width="600" target=%target text=%text]
 [endmacro]
 
 ;Charactor Define
+[chara_new name="haruka" storage="./chara/hrkdefault.png" jname="はるか"]
 
+[chara_face name="haruka" face="pnpn" storage="./chara/hrkpnpn.png"]
+[chara_face name="haruka" face="tere" storage="./chara/hrktere.png"]
+[chara_face name="haruka" face="mjmj" storage="./chara/hrkmjmj.png"]
+[chara_face name="haruka" face="smile" storage="./chara/hrksmile.png"]
+[chara_face name="haruka" face="donbiki" storage="./chara/hrkdonbiki.png"]
+[chara_face name="haruka" face="odrk" storage="./chara/hrkodrk.png"]
 
+; popopo設定　少しポップで明るい印象（三角波）
+[popopo type="none"]
+[popopo type="triangle" frequency="E" octave="1" noplaychars="…、。！？" chara="はるか"]
 
 ;タイトル画面へ移動
 @jump storage="title.ks"
 
 [s]
-
 

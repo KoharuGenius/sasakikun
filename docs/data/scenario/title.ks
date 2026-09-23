@@ -2,8 +2,11 @@
 [cm]
 
 @clearstack
-;@bg storage ="title.jpg" time=100
+@bg storage ="title.jpg" time=100
 @wait time = 200
+
+;メニューボタンの表示
+@showmenubutton
 
 *start 
 
@@ -13,7 +16,10 @@
 ;[button x=135 y=500 graphic="title/button_replay.png" enterimg="title/button_replay2.png" storage="replay.ks" keyfocus="4"]
 ;[button x=135 y=590 graphic="title/button_config.png" enterimg="title/button_config2.png" role="sleepgame" storage="config.ks" keyfocus="5"]
 
-[glink text="test" storage="gaming.ks"]
+[button x=280 y=500 graphic="title2/button_Start.png" target="gamestart"]
+[button x=280 y=600 graphic="title2/button_Config.png" role="sleepgame" storage="config.ks"]
+
+
 [s]
 
 *gamestart

@@ -3,8 +3,7 @@
 [start_keyconfig]
 
 @layopt layer=message0 visible=true
-
-[layopt layer="0" page="fore" visible="true"]
+@layopt layer="0" page="fore" visible="true"
 
 
 ; 前景レイヤー0を表示する
