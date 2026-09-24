@@ -1,4 +1,3 @@
-
 [cm]
 
 @clearstack
@@ -19,6 +18,8 @@
 [button x=280 y=500 graphic="title2/button_Start.png" target="gamestart"]
 [button x=280 y=600 graphic="title2/button_Config.png" role="sleepgame" storage="config.ks"]
 
+;For debug
+[glink text="test" storage="gaming.ks"]
 
 [s]
 

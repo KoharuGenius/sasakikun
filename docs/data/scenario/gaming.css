@@ -1,0 +1,24 @@
+/* Custom Css */
+.iscript-rainbow-box {
+  position: absolute;
+  top:290px;
+  left:800px;
+  width: 360px;
+  height: 180px;
+  //padding: 10px; /* 3pxのライン */
+  border: 10px solid transparent;
+  border-radius: 8px;
+  /* 枠線そのものにグラデーションを適用 */
+  border-image: linear-gradient(
+    calc(var(--hue, 0) * 1deg),
+    hsl(var(--hue, 0), 100%, 50%),
+    hsl(calc(var(--hue, 0) + 60), 100%, 50%),
+    hsl(calc(var(--hue, 0) + 120), 100%, 50%),
+    hsl(calc(var(--hue, 0) + 180), 100%, 50%),
+    hsl(calc(var(--hue, 0) + 240), 100%, 50%),
+    hsl(calc(var(--hue, 0) + 300), 100%, 50%)
+  ) 1;
+
+  /* 背景は完全透明 */
+  background: transparent;
+}
