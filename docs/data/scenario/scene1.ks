@@ -170,7 +170,7 @@
 #佐々木
 やあ、はるちゃん[p]
 @chara_mod name="haruka" face="odrk"
-こんばんわ！[p]
+こんばんわっ！[p]
 
 @playbgm storage="hennahitonichuui.mp3"
 #はるか:
@@ -179,7 +179,7 @@
 なんでウチに！？[p]
 
 #佐々木
-調査だっ！[p]
+[dekamoji]調査だっ！[resetfont][p]
 
 #はるか
 何の？[p]
@@ -288,7 +288,7 @@
 話さねばならない！[p]
 
 地磁気と「謎の万能感」の
-アウフヘーベン的コラボレーションについて！[p]
+アぅフヘぇヴぇン的コラヴォレイションについて！[p]
 
 #はるか
 言っとくけど、三行以上は聞かないわよ[p]
@@ -366,7 +366,7 @@ f.flag3 = 0;
 [dekamoji]さっさと帰って！佐々木くん！[resetfont][p]
 
 #佐々木
-フッ…、そうは言うがな、はるちゃん…
+フッ…そうは言うがな、はるちゃん…
 
 ; フラグ1がまだ立っていない場合のみ表示
 [if exp="f.flag1 == 0"]
@@ -508,7 +508,7 @@ f.flag3 = 0;
 #佐々木
 ハイっ！[p]
 私はここまで１０分の道のりを６０分かけて粘り強くやってきました！[p]
-そのおかげで途中のコンビニにあった漫画から感銘を受けることができたんです！[p]
+なぜかというと途中のコンビニにあった漫画から感銘を受けたからなんです！[p]
 そこから学んだことは御社が手掛けるビジネスにとって必ずや…[p]
 
 #はるか
@@ -648,7 +648,7 @@ f.flag3 = 0;
 @filter name="haruka" blur=0
 @free_filter
 #佐々木
-…セッティング完了[p]
+…二人でセッティング完了[p]
 
 ;
 ;最終選択肢（ルート分岐）
@@ -672,6 +672,9 @@ f.flag3 = 0;
 
 [s]
 
+;
+;クローゼット調査
+;
 *qlasta
 
 [sasakifumu]
@@ -733,10 +736,10 @@ f.flag3 = 0;
 #佐々木
 当時の日記だ…[p]
 なになに…[p]
-chara_mod name="haruka" face="tere"
+@chara_mod name="haruka" face="tere"
 11月5日、秋は人を恋しくさせる…[p]
 今日はケンジ君と目があっちゃった♡[p]
-この胸の高まり、ドキドキ、誰にも1ミリも伝わらない[p]
+この胸の高まり♡ドキドキ♡誰にも1ミリも伝わらない[p]
 
 …ああ、ケンジってあいつだろ？人気者だったよな[p]
 
@@ -766,6 +769,125 @@ chara_mod name="haruka" face="tere"
 [sasakifumu]
 @jump target="*start_gaming" storage="gaming.ks"
 
+;
+;怪談ルート
+;
+*qlastc
+[sasakifumu]
+
+#佐々木
+これはまずい…[p]
+リビングの照明と換気によって、地磁気が【乱気流】を起こしている！[p]
+
+@filter sepia=80
+ほら、なんとなく世界がセピア調になってるだろ？[p]
+
+#はるか:pnpn
+ど…どうすればいいの？[p]
+
+#佐々木
+【毒をもって毒を制す】だ[p]
+つまり、この邪気を追い払うために【怖い話】をする！[p]
+
+#はるか:donbiki
+なに、それぇ～～[p]
+
+#佐々木
+こんなこともあろうかと[p]
+
+@playse storage="jajaan.mp3"
+
+【ローソク】を用意しておいた！[p]
+
+#はるか
+…………！[p]
+
+#佐々木
+あとはロープと…[p]
+
+@playse storage="tukkomi.mp3"
+@quake count=5 time=600 vmax=150 wait=false
+@chara_mod name="haruka" face="default"
+[dekamoji]いてッ！[resetfont][p]
+
+…これで【規制線的結界】を張るんだ[r]
+ホラ手伝って…[p]
+
+#はるか
+どうして、いちいち誤解させるようなモノ持ってるのよ！[p]
+
+#佐々木
+それ…では…、ひとつ話をするたびにローソクを消すぞ！[p]
+
+#はるか:donbiki
+ええ～～～[p]
+
+#佐々木
+第一話！【呪いのカメさん🐢】！[p]
+…………[p]
+
+#はるか:mjmj
+やだー！カメさん🐢のろい！[p]
+
+@filter brightness=70
+
+#佐々木
+第二話！【アンドロイドは電気ウナギの夢を見た】！[p]
+
+#はるか:donbiki
+し…しびれちゃう…[p]
+
+@filter brightness=50
+
+#佐々木
+次の話は！[p]
+
+#はるか:mjmj
+いやああああああ[p]
+
+#佐々木
+まだ何も話してないぞ[p]
+
+@filter brightness=20
+
+#佐々木
+…というわけで[p]
+
+#はるか
+はぁ…はぁ…[p]
+
+@filter brightness=0
+
+#佐々木
+終わりだ…！[p]
+
+じゃあ、約束どおり帰らせてもらうか…[p]
+
+#はるか
+[dekamoji]帰らないで…[resetfont][p]
+
+#佐々木
+えっ？[p]
+
+#はるか
+とりあえず電気点けるよ[p]
+
+;スイッチオンSE
+;@
+@free_filter time=500
+
+怖くて…トイレも行けないじゃないの…！[p]
+
+#佐々木
+まだ邪気が残っていたかッ！[p]
+それならとっておきの[r]
+@playse storage="jajaan.mp3"
+[dekamoji]【怖い話】を！[resetfont][p]
+
+#はるか:tere
+そうじゃなくて…！[p]
+
+@jump target="ramee"
 
 ;共通ストーリー
 ;はるか泣く
@@ -779,7 +901,7 @@ chara_mod name="haruka" face="tere"
 @chara_hide name="haruka" time=10
 @bg storage="ivnt_naku.jpg" time=500
 @quake count=10 time=600 vmax=150 wait=false
-<dekamoji>いやああああああああああああ！！<resetfont>[p]
+[dekamoji]いやああああああああああああ！！[resetfont][p]
 
 @playse storage="whitenoise.mp3" loop="true"
 #
@@ -789,9 +911,9 @@ chara_mod name="haruka" face="tere"
 [dekamoji]ああーん、見ちゃらめええええええ！！[resetfont][p]
 
 #佐々木
-は、はるちゃん…[p]
+はるちゃん！[p]
 
-この涙の量…尋常じゃないよッ[p]
+こっ、この涙は……[p]
 
 @filter blur=10 sepia=10
 ………あれ？[p]
@@ -812,19 +934,20 @@ chara_mod name="haruka" face="tere"
 @filter blur=50 sepia=50
 #佐々木
 おれは…寝る時は…何も着ない…んだ[p]
-だってさぁ…[r]ふぁ…締め付けがないだろ？[p]
-そーゆーのが一切にゃいほうが、血流も良好になってサイコーの朝でさ…むにゃ[p]
+だってさぁ…[r]ふぁあ～、締め付けがないだろ？[p]
+そぉゆぅのが一切にゃいほうが、血流も良好になってサイコーの朝でさ…むにゃ[p]
 それにさぁ、洋画とか観てみなよ[p]
 格好いい主人公はだいたいベッドで何も着ずに寝てるだろ……？[p]
 しょれが【グローバルスタンダード】ってやつでしゃあ…[p]
-要するにだ…[p]
+要するに…[p]
 
-@bg storage="black.jpg"
+@bg storage="black.jpg" time=500
+@free_filter
 @playse storage="tukkomi.mp3"
-@quake count=5 time=500 vmax=150
+@quake count=5 time=500 vmax=150  wait=false
 #はるか
 こらーーー！[p]
-女子の家で、全◯になって寝ないでッ！[p]
+女子の家で、【ZENRA】にならないでッ！[p]
 
 #佐々木
 [dekamoji]ほやしゅみ（おやすみ）[resetfont][p]
@@ -847,7 +970,7 @@ ZZZZZZZ……[p]
 
 …でも、どうして俺、ここが自分の家だと思って寝ちゃったんだろう?[p]
 
-chara_show name="haruka"
+@chara_show name="haruka"
 #はるか
 そんなの、こっちが聞きたいわよ！[p]
 
@@ -861,7 +984,7 @@ chara_show name="haruka"
 ものすごい勢いで泣いてたしね[p]
 
 @playse storage="tukkomi.mp3"
-@quake count=5 time=500 vmax=150
+@quake count=5 time=600 vmax=150 wait=false
 #はるか:default
 それ以上は言うなーーーッ！[p]
 
@@ -900,7 +1023,7 @@ chara_show name="haruka"
 幼稚園の頃まで一緒にお風呂にも…[p]
 
 #はるか:default
-[dekamoji]帰ってくれないんだもの！[resetfont][p]
+[dekamoji]だって帰ってくれないんだもの！[resetfont][p]
 女の子の【初めて】を何だと思ってるのよッ！[p]
 
 #佐々木
@@ -917,7 +1040,7 @@ chara_show name="haruka"
 その人は【ここが自分の家】だと思いこんでしまうのかも[p]
 
 #佐々木
-そして眠くなってしまうと？[r]
+そして安心して眠くなってしまうと？[r]
 ホーム・スイートホーム♪って[p]
 
 #はるか
@@ -927,7 +1050,7 @@ chara_show name="haruka"
 [cm]
 
 @chara_hide name="haruka"
-@bg storage="prologue.jpg"
+@bg storage="prologue.jpg" time=1500
 
 #佐々木
 …………[p]
@@ -954,9 +1077,12 @@ chara_show name="haruka"
 
 @wait time=1000
 
-@quake count=5 time=500 vmax=150
+;ピキーンSE
+;@playse storage=".mp3"
+@quake count=5 time=500 vmax=150 wait=false
 [dekamoji]さっさと帰って！佐々木くん！[resetfont]
 
 
 
 
+[s]

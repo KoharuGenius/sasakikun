@@ -4,21 +4,21 @@
 
 @bg storage="room_evening.jpg"
 @layopt layer=message0 visible=true
-@layopt layer="0" page="fore" visible="true"
+@layopt layer="1" page="fore" visible="true"
 
 
 *start_gaming
 @fadeoutbgm time=3000
 
 ; 前景レイヤー0を表示する
-@freeimage layer=0
-@layopt layer=0 visible=true
+@freeimage layer=1
+@layopt layer=1 visible=true
 
 @loadcss file="data/scenario/gaming.css"
 ;
 ; 前景レイヤー0にHTML（div要素など）を挿入する
 [iscript]
-$(".0_fore").html('<div id="rainbow-target" class="iscript-rainbow-box"></div>');
+$(".1_fore").html('<div id="rainbow-target" class="iscript-rainbow-box"></div>');
 [endscript]
 
 
@@ -91,10 +91,11 @@ window.myInterval = setInterval(function() {
 #はるか:pnpn
 ま、負けないわよ…！[p]
 
+
 #
+;@playse
 ROUND1[l][r]
 Sasaki Win![p]
-
 #佐々木
 フッ…圧勝だったな。幸先いいぜ！[p]
 
@@ -164,8 +165,8 @@ Sasaki Win![p]
 
 *g3
 [eval exp="clearInterval(window.myInterval);"]
-@freeimage layer=0
-@layopt layer=0 visible=false
+@freeimage layer=1
+@layopt layer=1 visible=false
 @chara_show name="haruka" time=10
 
 @jump target="ramee" storage="scene1.ks"
