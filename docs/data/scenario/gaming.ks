@@ -166,6 +166,6 @@ Sasaki Win![p]
 [eval exp="clearInterval(window.myInterval);"]
 @freeimage layer=0
 @layopt layer=0 visible=false
-chara_show name="haruka" time=10
+@chara_show name="haruka" time=10
 
 @jump target="ramee" storage="scene1.ks"
