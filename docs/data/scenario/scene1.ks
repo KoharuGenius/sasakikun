@@ -993,6 +993,18 @@ ZZZZZZZ……[p]
 だって…ウチには【家訓】があって…[p]
 
 ;巻物アセット表示
+;前景レイヤー左側にアイテム表示
+[macro name="showitemslide"]
+#
+[cm]
+@playse storage="shupan.mp3" 
+@chara_move name="haruka" left="+=150"
+@freeimage layer="1"
+@image layer="1" x=200 y=100 width=360 height=360 storage=%storage
+@layopt layer="1" visible="true"
+[endmacro]
+
+@showitemslide storage="makimono.jpg"
 
 #佐々木
 [dekamoji]【家訓】！？[resetfont][p]
@@ -1049,6 +1061,7 @@ ZZZZZZZ……[p]
 #
 [cm]
 
+@layopt layer="1" visible="false"
 @chara_hide name="haruka"
 @bg storage="prologue.jpg" time=1500
 

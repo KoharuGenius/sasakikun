@@ -84,6 +84,8 @@ window.myInterval = setInterval(function() {
 #はるか:tere
 恥ずかしいことなんだ…[p]
 
+
+@playbgm storage="quickplay.mp3"
 #佐々木
 さあ…、パーティーの始まりだッ！[p]
 敗者の椅子を整えておいてくれよ[p]
@@ -93,15 +95,17 @@ window.myInterval = setInterval(function() {
 
 
 #
-;@playse
+@playse storage="airphone.mp3"
 ROUND1[l][r]
 Sasaki Win![p]
 #佐々木
-フッ…圧勝だったな。幸先いいぜ！[p]
+先制！[r]
+圧勝だったな。幸先いいぜ！[p]
 
 #はるか
 まだまだこれからだから！[p]
 
+@playse storage="airphone.mp3"
 #
 ROUND10[l][r]
 Sasaki Win![p]
@@ -112,6 +116,7 @@ Sasaki Win![p]
 #佐々木
 [dekamoji]答える必要はない[resetfont][p]
 
+@playse storage="airphone.mp3"
 #
 ROUND50[l][r]
 Sasaki Win![p]
@@ -123,6 +128,7 @@ Sasaki Win![p]
 #佐々木
 フッ…あまり退屈させないでくれよ…[p]
 
+@playse storage="airphone.mp3"
 #
 ROUND99[l][r]
 Sasaki Win![p]
@@ -146,6 +152,7 @@ Sasaki Win![p]
 [s]
 
 *qgamea
+@playse storage="airphone.mp3"
 #
 ROUND100[l][r]
 Sasaki Win![p]
