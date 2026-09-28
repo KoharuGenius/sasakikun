@@ -1,29 +1,19 @@
-/* Custom Css */
-.iscript-rainbow-box {
-  position: absolute;
-  top:290px;
-  left:800px;
-  width: 360px;
-  height: 180px;
-  //padding: 10px; /* 3pxのライン */
-  border: 10px solid transparent;
-  border-radius: 8px;
-  /* 枠線そのものにグラデーションを適用 */
-  border-image: linear-gradient(
-    calc(var(--hue, 0) * 1deg),
-    hsl(var(--hue, 0), 100%, 50%),
-    hsl(calc(var(--hue, 0) + 60), 100%, 50%),
-    hsl(calc(var(--hue, 0) + 120), 100%, 50%),
-    hsl(calc(var(--hue, 0) + 180), 100%, 50%),
-    hsl(calc(var(--hue, 0) + 240), 100%, 50%),
-    hsl(calc(var(--hue, 0) + 300), 100%, 50%)
-  ) 1;
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      background-color: #F5F5DC; /* グラデーションが見やすいダーク背景 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+    }
 
-  /* 背景は完全透明 */
-  background: transparent;
-}
-
-.wavy-container {
+    .wavy-container {
       display: inline-block;
       font-size: 2.5rem;
       font-weight: bold;
@@ -77,5 +67,20 @@
         background-position: 0% 50%;
       }
     }
+  </style>
+</head>
+<body>
 
-    
+  <div class="wavy-container">
+    <span class="wavy-char">♨</span>
+    <span class="wavy-char">地</span>
+    <span class="wavy-char">磁</span>
+    <span class="wavy-char">気</span>
+    <span class="wavy-char">の</span>
+    <span class="wavy-char">乱</span>
+    <span class="wavy-char">れ</span>
+    <span class="wavy-char">♨</span>
+  </div>
+
+</body>
+</html>
