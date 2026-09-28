@@ -773,6 +773,36 @@ f.flag3 = 0;
 ;怪談ルート
 ;
 *qlastc
+
+@freeimage layer=1
+@layopt layer=1 visible=true
+
+; レイヤー1の指定座標 (例: x=100, y=200) に div#hoge を配置
+[iscript]
+// すでに存在している場合は削除（重複防止）
+$("#rosoku").remove();
+
+// div要素の作成とスタイルの設定
+let $rosoku = $("<div>", {
+    id: "rosoku",
+    css: {
+        position: "absolute",
+        left: "900px",  // 指定したいX座標
+        top: "400px",   // 指定したいY座標
+        zIndex: 100
+    }
+});
+
+// レイヤー1 (前画面) に追加
+$(".1_fore").append($rosoku);
+[endscript]
+
+@loadjs storage="module.js"
+
+[iscript]
+disprosoku(5);
+[endscript]
+
 [sasakifumu]
 
 #佐々木
